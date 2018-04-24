@@ -10,10 +10,6 @@
     <RootNamespace></RootNamespace>
     <AssemblyName>VisualStylesModule.Win</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <OptionExplicit>On</OptionExplicit>
-    <OptionCompare>Binary</OptionCompare>
-    <OptionStrict>Off</OptionStrict>
-    <OptionInfer>On</OptionInfer>
     <FileUpgradeFlags></FileUpgradeFlags>
     <UpgradeBackupLocation></UpgradeBackupLocation>
     <OldToolsVersion>2.0</OldToolsVersion>
@@ -33,6 +29,10 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,57 +52,68 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="DevExpress.Printing.v13.2.Core">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.Printing.v13.2.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Data.v13.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.Data.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Xpo.v13.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.ExpressApp.Xpo.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.v13.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.ExpressApp.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Objects.v13.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.ExpressApp.Objects.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Validation.v13.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.ExpressApp.Validation.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Win.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.ExpressApp.Win.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Persistent.Base.v13.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.Persistent.Base.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Persistent.BaseImpl.v13.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.Persistent.BaseImpl.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.Utils.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Xpo.v13.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.Xpo.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.XtraBars.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.5\DevExpress.XtraEditors.v13.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>

@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[DisableVisualStylesWindowController.cs](./CS/DisableVisualStylesModule.Win/DisableVisualStylesWindowController.cs) (VB: [DisableVisualStylesWindowController.vb](./VB/DisableVisualStylesModule.Win/DisableVisualStylesWindowController.vb))**
+<!-- default file list end -->
 # How to speed up WinForms apps, running in a Remote Desktop Services environment
 
 
